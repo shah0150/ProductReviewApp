@@ -1,6 +1,6 @@
 app.controller('detailsCtrl', ["$scope", "$stateParams", "Items", function ($scope, $stateParams, Items) {
 
-
+    $scope.booksInCategory = [];
     Items.getAll().then(
         function (response) {
             $scope.allData;
@@ -15,6 +15,8 @@ app.controller('detailsCtrl', ["$scope", "$stateParams", "Items", function ($sco
                     $scope.longDescription = $scope.books[i].long_description;
                     $scope.price = $scope.books[i].price;
                     $scope.rating = $scope.books[i].rating;
+                    $scope.image = $scope.books[i].image;
+                    $scope.booksInCategory.push($scope.books[i]);
                 }
             }
         },
