@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "description": "adesh shah",
+  "main": "index.js",
+  "authors": [
+    "adesh shah"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ui"
+  ],
+  "homepage": "no"
+}
